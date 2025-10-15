@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'ru.antonov.agent'
+version = '0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.bytebuddy:byte-buddy:1.14.12'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+shadowJar {
+    archiveFileName = 'agent.jar'
+    manifest {
+        attributes(
+                'Agent-Class': 'ru.antonov.agent.Agent',
+                'Main-Class': 'ru.antonov.agent.RuntimeAttachment',
+                'Multi-Release': 'true',
+                'Can-Redefine-Classes': 'true',
+                'Can-Retransform-Classes': 'true'
+        )
+    }
+
+
+//    transform(Log4j2PluginsCacheFileTransformer)
+    mergeServiceFiles()
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,41 @@
+import com.github.jengelman.gradle.plugins.shadow.transformers.Log4j2PluginsCacheFileTransformer
+
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'ru.antonov'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.jmeter:ApacheJMeter_core:5.6.3'
+    implementation 'org.apache.jmeter:ApacheJMeter_http:5.6.3'
+    implementation 'com.google.code.gson:gson:2.11.0'
+    implementation 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+shadowJar {
+    manifest {
+        attributes(
+                'Main-Class': 'ru.antonov.TestsPlan',
+                'Multi-Release': 'true',
+        )
+    }
+
+    transform(Log4j2PluginsCacheFileTransformer)
+    mergeServiceFiles()
+}

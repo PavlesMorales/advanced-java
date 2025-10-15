@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'org.javamodularity.moduleplugin' version '1.8.15'
+}
+
+group = 'ru.antonov.client.service'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation project(':5-hw-java-modules:client-core')
+    implementation project(':5-hw-java-modules:client-provider')
+
+    implementation 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

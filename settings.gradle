@@ -1,0 +1,39 @@
+rootProject.name = 'advanced-java'
+
+include '1-hw-cache'
+include '2-hw-serialgc'
+include '3-hw-memory-dump'
+include '4-hw-graalvm'
+
+include '5-hw-java-modules'
+include '5-hw-java-modules:client-api'
+findProject(':5-hw-java-modules:client-api')?.name = 'client-api'
+
+include '5-hw-java-modules:client-service'
+findProject(':5-hw-java-modules:client-service')?.name = 'client-service'
+
+include '5-hw-java-modules:client-provider'
+findProject(':5-hw-java-modules:client-provider')?.name = 'client-provider'
+
+include '5-hw-java-modules:client-core'
+findProject(':5-hw-java-modules:client-core')?.name = 'client-core'
+
+include '6-hw-jdk-tools'
+include '6-hw-jdk-tools:keytool'
+findProject(':6-hw-jdk-tools:keytool')?.name = 'keytool'
+include '6-hw-jdk-tools:jlink'
+findProject(':6-hw-jdk-tools:jlink')?.name = 'jlink'
+
+include '7-hw-jmh-benchmark'
+
+include '8-hw-jmeter'
+include '8-hw-jmeter:registration-service'
+findProject(':8-hw-jmeter:registration-service')?.name = 'registration-service'
+include '8-hw-jmeter:tests-plan'
+findProject(':8-hw-jmeter:tests-plan')?.name = 'tests-plan'
+
+include '9-hw-jfr'
+include '9-hw-jfr:service'
+include '9-hw-jfr:jdbc-agent'
+findProject(':9-hw-jfr:jdbc-agent')?.name = 'jdbc-agent'
+

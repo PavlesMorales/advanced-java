@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.springframework.boot' version '3.3.5'
+    id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'ru.antonov'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+    dependencies {
+        apply plugin: "io.spring.dependency-management"
+        dependencyManagement {
+            dependencies {
+                imports {
+                    mavenBom "org.springframework.boot:spring-boot-dependencies:3.3.5"
+                }
+
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project('client-api')
+    implementation project('client-service')
+    implementation project('client-provider')
+    implementation project('client-core')
+}
+
+bootJar {
+    manifest {
+        mainClass = 'ru.antonov.client.api.ClientApi'
+    }
+}

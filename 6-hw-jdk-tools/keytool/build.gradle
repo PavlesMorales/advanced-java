@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.antonov'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru/antonov/Main'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: web
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+    url: jdbc:postgresql://localhost:5430/testdb
+    user: usr
+    password: pwd
+  datasource:
+    url: jdbc:postgresql://localhost:5430/testdb
+    username: usr
+    password: pwd
+  jpa:
+    database: postgresql
+    show-sql: false
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate

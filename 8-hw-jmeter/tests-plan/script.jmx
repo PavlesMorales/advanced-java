@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.apache.jmeter.save.ScriptWrapper>
+  <version></version>
+  <testPlan class="org.apache.jorphan.collections.ListedHashTree" serialization="custom">
+    <org.apache.jorphan.collections.HashTree>
+      <default>
+        <data serialization="custom">
+          <unserializable-parents/>
+          <java.util.IdentityHashMap>
+            <default>
+              <size>1</size>
+            </default>
+            <java.lang.Integer>1</java.lang.Integer>
+            <org.apache.jmeter.testelement.TestPlan>
+              <propMap class="java.util.Collections$SynchronizedMap" serialization="custom">
+                <java.util.Collections_-SynchronizedMap>
+                  <default>
+                    <m class="java.util.LinkedHashMap">
+                      <java.util.Map_-Entry>
+                        <java.lang.String>TestElement.name</java.lang.String>
+                        <org.apache.jmeter.testelement.property.StringProperty>
+                          <name>TestElement.name</name>
+                          <value>Registration Service Test Plan</value>
+                        </org.apache.jmeter.testelement.property.StringProperty>
+                      </java.util.Map_-Entry>
+                      <java.util.Map_-Entry>
+                        <java.lang.String>TestElement.test_class</java.lang.String>
+                        <org.apache.jmeter.testelement.property.StringProperty>
+                          <name>TestElement.test_class</name>
+                          <value>org.apache.jmeter.testelement.TestPlan</value>
+                        </org.apache.jmeter.testelement.property.StringProperty>
+                      </java.util.Map_-Entry>
+                      <java.util.Map_-Entry>
+                        <java.lang.String>TestElement.gui_class</java.lang.String>
+                        <org.apache.jmeter.testelement.property.StringProperty>
+                          <name>TestElement.gui_class</name>
+                          <value>org.apache.jmeter.control.gui.TestPlanGui</value>
+                        </org.apache.jmeter.testelement.property.StringProperty>
+                      </java.util.Map_-Entry>
+                    </m>
+                    <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+                  </default>
+                </java.util.Collections_-SynchronizedMap>
+              </propMap>
+            </org.apache.jmeter.testelement.TestPlan>
+            <org.apache.jorphan.collections.ListedHashTree serialization="custom">
+              <org.apache.jorphan.collections.HashTree>
+                <default>
+                  <data serialization="custom">
+                    <unserializable-parents/>
+                    <java.util.IdentityHashMap>
+                      <default>
+                        <size>1</size>
+                      </default>
+                      <java.lang.Integer>1</java.lang.Integer>
+                      <org.apache.jmeter.threads.ThreadGroup serialization="custom">
+                        <org.apache.jmeter.testelement.AbstractTestElement>
+                          <default>
+                            <propMap class="java.util.LinkedHashMap">
+                              <java.util.Map_-Entry>
+                                <java.lang.String>TestElement.name</java.lang.String>
+                                <org.apache.jmeter.testelement.property.StringProperty>
+                                  <name>TestElement.name</name>
+                                  <value>Registration Service</value>
+                                </org.apache.jmeter.testelement.property.StringProperty>
+                              </java.util.Map_-Entry>
+                              <java.util.Map_-Entry>
+                                <java.lang.String>ThreadGroup.num_threads</java.lang.String>
+                                <org.apache.jmeter.testelement.property.IntegerProperty>
+                                  <name>ThreadGroup.num_threads</name>
+                                  <value>600</value>
+                                  <savedValue>0</savedValue>
+                                </org.apache.jmeter.testelement.property.IntegerProperty>
+                              </java.util.Map_-Entry>
+                              <java.util.Map_-Entry>
+                                <java.lang.String>ThreadGroup.ramp_time</java.lang.String>
+                                <org.apache.jmeter.testelement.property.IntegerProperty>
+                                  <name>ThreadGroup.ramp_time</name>
+                                  <value>1</value>
+                                  <savedValue>0</savedValue>
+                                </org.apache.jmeter.testelement.property.IntegerProperty>
+                              </java.util.Map_-Entry>
+                              <java.util.Map_-Entry>
+                                <java.lang.String>ThreadGroup.main_controller</java.lang.String>
+                                <org.apache.jmeter.testelement.property.TestElementProperty>
+                                  <name>ThreadGroup.main_controller</name>
+                                  <value class="org.apache.jmeter.control.LoopController">
+                                    <propMap class="java.util.Collections$SynchronizedMap" serialization="custom">
+                                      <java.util.Collections_-SynchronizedMap>
+                                        <default>
+                                          <m class="java.util.LinkedHashMap">
+                                            <java.util.Map_-Entry>
+                                              <java.lang.String>LoopController.loops</java.lang.String>
+                                              <org.apache.jmeter.testelement.property.IntegerProperty>
+                                                <name>LoopController.loops</name>
+                                                <value>60</value>
+                                                <savedValue>0</savedValue>
+                                              </org.apache.jmeter.testelement.property.IntegerProperty>
+                                            </java.util.Map_-Entry>
+                                            <java.util.Map_-Entry>
+                                              <java.lang.String>TestElement.test_class</java.lang.String>
+                                              <org.apache.jmeter.testelement.property.StringProperty>
+                                                <name>TestElement.test_class</name>
+                                                <value>org.apache.jmeter.control.LoopController</value>
+                                              </org.apache.jmeter.testelement.property.StringProperty>
+                                            </java.util.Map_-Entry>
+                                            <java.util.Map_-Entry>
+                                              <java.lang.String>TestElement.gui_class</java.lang.String>
+                                              <org.apache.jmeter.testelement.property.StringProperty>
+                                                <name>TestElement.gui_class</name>
+                                                <value>org.apache.jmeter.control.gui.LoopControlPanel</value>
+                                              </org.apache.jmeter.testelement.property.StringProperty>
+                                            </java.util.Map_-Entry>
+                                            <java.util.Map_-Entry>
+                                              <java.lang.String>LoopController.continue_forever</java.lang.String>
+                                              <org.apache.jmeter.testelement.property.BooleanProperty>
+                                                <name>LoopController.continue_forever</name>
+                                                <value>false</value>
+                                              </org.apache.jmeter.testelement.property.BooleanProperty>
+                                            </java.util.Map_-Entry>
+                                          </m>
+                                          <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+                                        </default>
+                                      </java.util.Collections_-SynchronizedMap>
+                                    </propMap>
+                                    <breakLoop>false</breakLoop>
+                                  </value>
+                                </org.apache.jmeter.testelement.property.TestElementProperty>
+                              </java.util.Map_-Entry>
+                              <java.util.Map_-Entry>
+                                <java.lang.String>TestElement.test_class</java.lang.String>
+                                <org.apache.jmeter.testelement.property.StringProperty>
+                                  <name>TestElement.test_class</name>
+                                  <value>org.apache.jmeter.threads.ThreadGroup</value>
+                                </org.apache.jmeter.testelement.property.StringProperty>
+                              </java.util.Map_-Entry>
+                              <java.util.Map_-Entry>
+                                <java.lang.String>TestElement.gui_class</java.lang.String>
+                                <org.apache.jmeter.testelement.property.StringProperty>
+                                  <name>TestElement.gui_class</name>
+                                  <value>org.apache.jmeter.threads.gui.ThreadGroupGui</value>
+                                </org.apache.jmeter.testelement.property.StringProperty>
+                              </java.util.Map_-Entry>
+                            </propMap>
+                          </default>
+                        </org.apache.jmeter.testelement.AbstractTestElement>
+                        <org.apache.jmeter.threads.AbstractThreadGroup>
+                          <default>
+                            <numberOfThreads>0</numberOfThreads>
+                          </default>
+                        </org.apache.jmeter.threads.AbstractThreadGroup>
+                        <org.apache.jmeter.threads.ThreadGroup>
+                          <default>
+                            <delayedStartup>false</delayedStartup>
+                            <groupNumber>0</groupNumber>
+                            <running>false</running>
+                            <allThreads/>
+                          </default>
+                        </org.apache.jmeter.threads.ThreadGroup>
+                      </org.apache.jmeter.threads.ThreadGroup>
+                      <org.apache.jorphan.collections.ListedHashTree serialization="custom">
+                        <org.apache.jorphan.collections.HashTree>
+                          <default>
+                            <data serialization="custom">
+                              <unserializable-parents/>
+                              <java.util.IdentityHashMap>
+                                <default>
+                                  <size>5</size>
+                                </default>
+                                <java.lang.Integer>5</java.lang.Integer>
+                                <ru.antonov.RandomVariableStringConfig>
+                                  <propMap class="java.util.LinkedHashMap">
+                                    <java.util.Map_-Entry>
+                                      <java.lang.String>TestElement.test_class</java.lang.String>
+                                      <org.apache.jmeter.testelement.property.StringProperty>
+                                        <name>TestElement.test_class</name>
+                                        <value>org.apache.jmeter.config.RandomVariableConfig</value>
+                                      </org.apache.jmeter.testelement.property.StringProperty>
+                                    </java.util.Map_-Entry>
+                                    <java.util.Map_-Entry>
+                                      <java.lang.String>TestElement.gui_class</java.lang.String>
+                                      <org.apache.jmeter.testelement.property.StringProperty>
+                                        <name>TestElement.gui_class</name>
+                                        <value>org.apache.jmeter.testbeans.gui.TestBeanGUI</value>
+                                      </org.apache.jmeter.testelement.property.StringProperty>
+                                    </java.util.Map_-Entry>
+                                  </propMap>
+                                  <variableName>login</variableName>
+                                  <length>10</length>
+                                </ru.antonov.RandomVariableStringConfig>
+                                <org.apache.jorphan.collections.ListedHashTree serialization="custom">
+                                  <org.apache.jorphan.collections.HashTree>
+                                    <default>
+                                      <data serialization="custom">
+                                        <unserializable-parents/>
+                                        <java.util.IdentityHashMap>
+                                          <default>
+                                            <size>0</size>
+                                          </default>
+                                          <java.lang.Integer>0</java.lang.Integer>
+                                        </java.util.IdentityHashMap>
+                                      </data>
+                                    </default>
+                                  </org.apache.jorphan.collections.HashTree>
+                                  <org.apache.jorphan.collections.ListedHashTree>
+                                    <default>
+                                      <order/>
+                                    </default>
+                                  </org.apache.jorphan.collections.ListedHashTree>
+                                </org.apache.jorphan.collections.ListedHashTree>
+                                <org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy>
+                                  <propMap class="java.util.Collections$SynchronizedMap" serialization="custom">
+                                    <java.util.Collections_-SynchronizedMap>
+                                      <default>
+                                        <m class="java.util.LinkedHashMap">
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>HTTPsampler.Arguments</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.TestElementProperty>
+                                              <name>HTTPsampler.Arguments</name>
+                                              <value class="org.apache.jmeter.config.Arguments">
+                                                <propMap class="java.util.Collections$SynchronizedMap" serialization="custom">
+                                                  <java.util.Collections_-SynchronizedMap>
+                                                    <default>
+                                                      <m class="java.util.LinkedHashMap">
+                                                        <java.util.Map_-Entry>
+                                                          <java.lang.String>Arguments.arguments</java.lang.String>
+                                                          <org.apache.jmeter.testelement.property.CollectionProperty>
+                                                            <name>Arguments.arguments</name>
+                                                            <value class="java.util.ArrayList">
+                                                              <org.apache.jmeter.testelement.property.TestElementProperty>
+                                                                <name></name>
+                                                                <value class="org.apache.jmeter.protocol.http.util.HTTPArgument">
+                                                                  <propMap class="java.util.Collections$SynchronizedMap" serialization="custom">
+                                                                    <java.util.Collections_-SynchronizedMap>
+                                                                      <default>
+                                                                        <m class="java.util.LinkedHashMap">
+                                                                          <java.util.Map_-Entry>
+                                                                            <java.lang.String>Argument.value</java.lang.String>
+                                                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                                                              <name>Argument.value</name>
+                                                                              <value>{
+    &quot;login&quot; : &quot;${login}@mail.ru&quot;,
+    &quot;password&quot; : &quot;${password}&quot;
+}
+</value>
+                                                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                                                          </java.util.Map_-Entry>
+                                                                          <java.util.Map_-Entry>
+                                                                            <java.lang.String>HTTPArgument.always_encode</java.lang.String>
+                                                                            <org.apache.jmeter.testelement.property.BooleanProperty>
+                                                                              <name>HTTPArgument.always_encode</name>
+                                                                              <value>false</value>
+                                                                            </org.apache.jmeter.testelement.property.BooleanProperty>
+                                                                          </java.util.Map_-Entry>
+                                                                        </m>
+                                                                        <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+                                                                      </default>
+                                                                    </java.util.Collections_-SynchronizedMap>
+                                                                  </propMap>
+                                                                </value>
+                                                              </org.apache.jmeter.testelement.property.TestElementProperty>
+                                                            </value>
+                                                          </org.apache.jmeter.testelement.property.CollectionProperty>
+                                                        </java.util.Map_-Entry>
+                                                        <java.util.Map_-Entry>
+                                                          <java.lang.String>TestElement.test_class</java.lang.String>
+                                                          <org.apache.jmeter.testelement.property.StringProperty>
+                                                            <name>TestElement.test_class</name>
+                                                            <value>org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy</value>
+                                                          </org.apache.jmeter.testelement.property.StringProperty>
+                                                        </java.util.Map_-Entry>
+                                                        <java.util.Map_-Entry>
+                                                          <java.lang.String>TestElement.gui_class</java.lang.String>
+                                                          <org.apache.jmeter.testelement.property.StringProperty>
+                                                            <name>TestElement.gui_class</name>
+                                                            <value>org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</value>
+                                                          </org.apache.jmeter.testelement.property.StringProperty>
+                                                        </java.util.Map_-Entry>
+                                                      </m>
+                                                      <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+                                                    </default>
+                                                  </java.util.Collections_-SynchronizedMap>
+                                                </propMap>
+                                              </value>
+                                            </org.apache.jmeter.testelement.property.TestElementProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>HTTPSampler.domain</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>HTTPSampler.domain</name>
+                                              <value>localhost</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>HTTPSampler.port</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.IntegerProperty>
+                                              <name>HTTPSampler.port</name>
+                                              <value>8080</value>
+                                              <savedValue>0</savedValue>
+                                            </org.apache.jmeter.testelement.property.IntegerProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>HTTPSampler.path</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>HTTPSampler.path</name>
+                                              <value>/auth/register</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>HTTPSampler.method</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>HTTPSampler.method</name>
+                                              <value>POST</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>HTTPSampler.follow_redirects</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.BooleanProperty>
+                                              <name>HTTPSampler.follow_redirects</name>
+                                              <value>true</value>
+                                            </org.apache.jmeter.testelement.property.BooleanProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>HTTPSampler.use_keepalive</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.BooleanProperty>
+                                              <name>HTTPSampler.use_keepalive</name>
+                                              <value>true</value>
+                                            </org.apache.jmeter.testelement.property.BooleanProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>HTTPSampler.postBodyRaw</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.BooleanProperty>
+                                              <name>HTTPSampler.postBodyRaw</name>
+                                              <value>true</value>
+                                            </org.apache.jmeter.testelement.property.BooleanProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>TestElement.name</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>TestElement.name</name>
+                                              <value>register</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>TestElement.test_class</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>TestElement.test_class</name>
+                                              <value>org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>TestElement.gui_class</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>TestElement.gui_class</name>
+                                              <value>org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                        </m>
+                                        <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+                                      </default>
+                                    </java.util.Collections_-SynchronizedMap>
+                                  </propMap>
+                                </org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy>
+                                <org.apache.jorphan.collections.ListedHashTree serialization="custom">
+                                  <org.apache.jorphan.collections.HashTree>
+                                    <default>
+                                      <data serialization="custom">
+                                        <unserializable-parents/>
+                                        <java.util.IdentityHashMap>
+                                          <default>
+                                            <size>0</size>
+                                          </default>
+                                          <java.lang.Integer>0</java.lang.Integer>
+                                        </java.util.IdentityHashMap>
+                                      </data>
+                                    </default>
+                                  </org.apache.jorphan.collections.HashTree>
+                                  <org.apache.jorphan.collections.ListedHashTree>
+                                    <default>
+                                      <order/>
+                                    </default>
+                                  </org.apache.jorphan.collections.ListedHashTree>
+                                </org.apache.jorphan.collections.ListedHashTree>
+                                <org.apache.jmeter.timers.ConstantThroughputTimer>
+                                  <propMap class="java.util.Collections$SynchronizedMap" serialization="custom">
+                                    <java.util.Collections_-SynchronizedMap>
+                                      <default>
+                                        <m class="java.util.LinkedHashMap">
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>throughput</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.DoubleProperty>
+                                              <name>throughput</name>
+                                              <value>60.0</value>
+                                              <savedValue>0.0</savedValue>
+                                            </org.apache.jmeter.testelement.property.DoubleProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>TestElement.name</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>TestElement.name</name>
+                                              <value>Timer</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                        </m>
+                                        <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+                                      </default>
+                                    </java.util.Collections_-SynchronizedMap>
+                                  </propMap>
+                                  <previousTime>0</previousTime>
+                                </org.apache.jmeter.timers.ConstantThroughputTimer>
+                                <org.apache.jorphan.collections.ListedHashTree serialization="custom">
+                                  <org.apache.jorphan.collections.HashTree>
+                                    <default>
+                                      <data serialization="custom">
+                                        <unserializable-parents/>
+                                        <java.util.IdentityHashMap>
+                                          <default>
+                                            <size>0</size>
+                                          </default>
+                                          <java.lang.Integer>0</java.lang.Integer>
+                                        </java.util.IdentityHashMap>
+                                      </data>
+                                    </default>
+                                  </org.apache.jorphan.collections.HashTree>
+                                  <org.apache.jorphan.collections.ListedHashTree>
+                                    <default>
+                                      <order/>
+                                    </default>
+                                  </org.apache.jorphan.collections.ListedHashTree>
+                                </org.apache.jorphan.collections.ListedHashTree>
+                                <ru.antonov.RandomVariableStringConfig>
+                                  <propMap class="java.util.LinkedHashMap">
+                                    <java.util.Map_-Entry>
+                                      <java.lang.String>TestElement.test_class</java.lang.String>
+                                      <org.apache.jmeter.testelement.property.StringProperty>
+                                        <name>TestElement.test_class</name>
+                                        <value>org.apache.jmeter.config.RandomVariableConfig</value>
+                                      </org.apache.jmeter.testelement.property.StringProperty>
+                                    </java.util.Map_-Entry>
+                                    <java.util.Map_-Entry>
+                                      <java.lang.String>TestElement.gui_class</java.lang.String>
+                                      <org.apache.jmeter.testelement.property.StringProperty>
+                                        <name>TestElement.gui_class</name>
+                                        <value>org.apache.jmeter.testbeans.gui.TestBeanGUI</value>
+                                      </org.apache.jmeter.testelement.property.StringProperty>
+                                    </java.util.Map_-Entry>
+                                  </propMap>
+                                  <variableName>password</variableName>
+                                  <length>20</length>
+                                </ru.antonov.RandomVariableStringConfig>
+                                <org.apache.jorphan.collections.ListedHashTree serialization="custom">
+                                  <org.apache.jorphan.collections.HashTree>
+                                    <default>
+                                      <data serialization="custom">
+                                        <unserializable-parents/>
+                                        <java.util.IdentityHashMap>
+                                          <default>
+                                            <size>0</size>
+                                          </default>
+                                          <java.lang.Integer>0</java.lang.Integer>
+                                        </java.util.IdentityHashMap>
+                                      </data>
+                                    </default>
+                                  </org.apache.jorphan.collections.HashTree>
+                                  <org.apache.jorphan.collections.ListedHashTree>
+                                    <default>
+                                      <order/>
+                                    </default>
+                                  </org.apache.jorphan.collections.ListedHashTree>
+                                </org.apache.jorphan.collections.ListedHashTree>
+                                <org.apache.jmeter.protocol.http.control.HeaderManager>
+                                  <propMap class="java.util.Collections$SynchronizedMap" serialization="custom">
+                                    <java.util.Collections_-SynchronizedMap>
+                                      <default>
+                                        <m class="java.util.LinkedHashMap">
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>HeaderManager.headers</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.CollectionProperty>
+                                              <name>HeaderManager.headers</name>
+                                              <value class="java.util.ArrayList">
+                                                <org.apache.jmeter.testelement.property.TestElementProperty>
+                                                  <name>Content-Type</name>
+                                                  <value class="org.apache.jmeter.protocol.http.control.Header">
+                                                    <propMap class="java.util.Collections$SynchronizedMap" serialization="custom">
+                                                      <java.util.Collections_-SynchronizedMap>
+                                                        <default>
+                                                          <m class="java.util.LinkedHashMap">
+                                                            <java.util.Map_-Entry>
+                                                              <java.lang.String>Header.name</java.lang.String>
+                                                              <org.apache.jmeter.testelement.property.StringProperty>
+                                                                <name>Header.name</name>
+                                                                <value>Content-Type</value>
+                                                              </org.apache.jmeter.testelement.property.StringProperty>
+                                                            </java.util.Map_-Entry>
+                                                            <java.util.Map_-Entry>
+                                                              <java.lang.String>Header.value</java.lang.String>
+                                                              <org.apache.jmeter.testelement.property.StringProperty>
+                                                                <name>Header.value</name>
+                                                                <value>application/json</value>
+                                                              </org.apache.jmeter.testelement.property.StringProperty>
+                                                            </java.util.Map_-Entry>
+                                                          </m>
+                                                          <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+                                                        </default>
+                                                      </java.util.Collections_-SynchronizedMap>
+                                                    </propMap>
+                                                  </value>
+                                                </org.apache.jmeter.testelement.property.TestElementProperty>
+                                              </value>
+                                            </org.apache.jmeter.testelement.property.CollectionProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>TestElement.name</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>TestElement.name</name>
+                                              <value>Header manager</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>TestElement.test_class</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>TestElement.test_class</name>
+                                              <value>org.apache.jmeter.protocol.http.control.HeaderManager</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                          <java.util.Map_-Entry>
+                                            <java.lang.String>TestElement.gui_class</java.lang.String>
+                                            <org.apache.jmeter.testelement.property.StringProperty>
+                                              <name>TestElement.gui_class</name>
+                                              <value>org.apache.jmeter.protocol.http.gui.HeaderPanel</value>
+                                            </org.apache.jmeter.testelement.property.StringProperty>
+                                          </java.util.Map_-Entry>
+                                        </m>
+                                        <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+                                      </default>
+                                    </java.util.Collections_-SynchronizedMap>
+                                  </propMap>
+                                </org.apache.jmeter.protocol.http.control.HeaderManager>
+                                <org.apache.jorphan.collections.ListedHashTree serialization="custom">
+                                  <org.apache.jorphan.collections.HashTree>
+                                    <default>
+                                      <data serialization="custom">
+                                        <unserializable-parents/>
+                                        <java.util.IdentityHashMap>
+                                          <default>
+                                            <size>0</size>
+                                          </default>
+                                          <java.lang.Integer>0</java.lang.Integer>
+                                        </java.util.IdentityHashMap>
+                                      </data>
+                                    </default>
+                                  </org.apache.jorphan.collections.HashTree>
+                                  <org.apache.jorphan.collections.ListedHashTree>
+                                    <default>
+                                      <order/>
+                                    </default>
+                                  </org.apache.jorphan.collections.ListedHashTree>
+                                </org.apache.jorphan.collections.ListedHashTree>
+                              </java.util.IdentityHashMap>
+                            </data>
+                          </default>
+                        </org.apache.jorphan.collections.HashTree>
+                        <org.apache.jorphan.collections.ListedHashTree>
+                          <default>
+                            <order>
+                              <org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy reference="../../../../org.apache.jorphan.collections.HashTree/default/data/java.util.IdentityHashMap/org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy"/>
+                              <org.apache.jmeter.timers.ConstantThroughputTimer reference="../../../../org.apache.jorphan.collections.HashTree/default/data/java.util.IdentityHashMap/org.apache.jmeter.timers.ConstantThroughputTimer"/>
+                              <ru.antonov.RandomVariableStringConfig reference="../../../../org.apache.jorphan.collections.HashTree/default/data/java.util.IdentityHashMap/ru.antonov.RandomVariableStringConfig"/>
+                              <ru.antonov.RandomVariableStringConfig reference="../../../../org.apache.jorphan.collections.HashTree/default/data/java.util.IdentityHashMap/ru.antonov.RandomVariableStringConfig[2]"/>
+                              <org.apache.jmeter.protocol.http.control.HeaderManager reference="../../../../org.apache.jorphan.collections.HashTree/default/data/java.util.IdentityHashMap/org.apache.jmeter.protocol.http.control.HeaderManager"/>
+                            </order>
+                          </default>
+                        </org.apache.jorphan.collections.ListedHashTree>
+                      </org.apache.jorphan.collections.ListedHashTree>
+                    </java.util.IdentityHashMap>
+                  </data>
+                </default>
+              </org.apache.jorphan.collections.HashTree>
+              <org.apache.jorphan.collections.ListedHashTree>
+                <default>
+                  <order>
+                    <org.apache.jmeter.threads.ThreadGroup reference="../../../../org.apache.jorphan.collections.HashTree/default/data/java.util.IdentityHashMap/org.apache.jmeter.threads.ThreadGroup"/>
+                  </order>
+                </default>
+              </org.apache.jorphan.collections.ListedHashTree>
+            </org.apache.jorphan.collections.ListedHashTree>
+          </java.util.IdentityHashMap>
+        </data>
+      </default>
+    </org.apache.jorphan.collections.HashTree>
+    <org.apache.jorphan.collections.ListedHashTree>
+      <default>
+        <order>
+          <org.apache.jmeter.testelement.TestPlan reference="../../../../org.apache.jorphan.collections.HashTree/default/data/java.util.IdentityHashMap/org.apache.jmeter.testelement.TestPlan"/>
+        </order>
+      </default>
+    </org.apache.jorphan.collections.ListedHashTree>
+  </testPlan>
+</org.apache.jmeter.save.ScriptWrapper>

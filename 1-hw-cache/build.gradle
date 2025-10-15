@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = JavaVersion.VERSION_21
+targetCompatibility = JavaVersion.VERSION_21
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru/otus/cachehw/Main'
+    }
+}
